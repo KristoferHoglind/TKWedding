@@ -1,0 +1,29 @@
+﻿@page "/galleri"
+@inject IStringLocalizer<Resource> localizer
+
+<PageTitle>Galleri</PageTitle>
+
+<h1>@localizer["gallery_title"]</h1>
+
+<h4>@localizer["gallery_subtitle"]</h4>
+
+<hr>
+
+<h5>&bull; @localizer["gallery_picture_title"]</h5>
+<div class="row">
+    <div class="col-10 ms-5">
+        <p>@localizer["gallery_picture_text1"]</p>
+        <p>@localizer["gallery_picture_text2"]</p>
+    </div>
+</div>
+<iframe src="https://drive.google.com/embeddedfolderview?id=1BbE3gU7GSHqX9uSFhk0UZF5aczGr2JmR#list" style="width:100%; height:300px; border:0;"></iframe>
+
+<hr>
+
+<h5>&bull; @localizer["gallery_movie_title"]</h5>
+<div class="row">
+    <div class="col-10 ms-5">
+        <p>@localizer["gallery_movie_text1"]</p>
+    </div>
+</div>
+<iframe src="https://drive.google.com/embeddedfolderview?id=1IOIFr76TP6LsP4B7D1LAKW4X5mFXEToi#list" style="width:100%; height:300px; border:0;"></iframe>

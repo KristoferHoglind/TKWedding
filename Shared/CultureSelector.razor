@@ -1,0 +1,15 @@
+﻿@inject IStringLocalizer<Resource> localizer
+
+<div class="row align-items-center culture-selector">
+    <div class="col-3 culture-selector-text">
+        @localizer["selector_lang"]:
+    </div>
+    <div class="col-4">
+        <select class="form-control" @bind="Culture">
+            @foreach (var culture in cultures)
+            {
+                <option value="@culture">@culture.DisplayName</option>
+            }
+        </select>
+    </div>
+</div>

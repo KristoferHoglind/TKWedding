@@ -1,0 +1,26 @@
+﻿@page "/"
+@inject IStringLocalizer<Resource> localizer
+
+<PageTitle>Hem</PageTitle>
+
+<h1> @localizer["home_title"]</h1>
+<div class="row">
+    <div class="col-12 mt-4">
+        <h4>@localizer["home_subtitle"]</h4>
+    </div>
+    <div class="row">
+        <div class="col-6 ms-4">
+            <p>@localizer["home_list_info"]:</p>
+            <ul>
+                <li>@localizer["home_list_item1"]</li>
+                <li>@localizer["home_list_item2"]</li>
+                <li>@localizer["home_list_item3"]</li>
+            </ul>
+            <p>@localizer["home_list_endtext"]</p>
+        </div>
+    </div>
+    <div class="col-12 mt-2">
+        <img src="wedding-heart-photo.png" class="img-fluid rounded d-block" />
+    </div>
+
+</div>
