@@ -202,7 +202,7 @@
     <value>Prosimy o kontakt z nowożeńcami, jeśli posiadasz więcej materiałów, które można tu załadować</value>
   </data>
   <data name="home_list_info" xml:space="preserve">
-    <value>Po lewej stronie znajdziesz:</value>
+    <value>W menu znajdziesz</value>
   </data>
   <data name="home_list_item1" xml:space="preserve">
     <value>Galeria ze zdjęciami i filmami</value>
