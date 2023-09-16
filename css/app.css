@@ -4,6 +4,10 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+h1, h4 {
+    font-family: "Lucida Calligraphy", "Courier New", monospace;
+}
+
 h1:focus {
     outline: none;
 }
@@ -99,3 +103,11 @@ a, .btn-link {
     .loading-progress-text:after {
         content: var(--blazor-load-percentage-text, "Loading");
     }
+
+.culture-selector {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.culture-selector-text {
+    color: white;
+}
