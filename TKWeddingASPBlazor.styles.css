@@ -126,3 +126,20 @@ main[b-3us82gmgfv] {
         overflow-y: auto;
     }
 }
+
+@media (min-width: 200px) {
+    .navbar-toggler[b-tchhgvgjtm] {
+        display: none;
+    }
+
+    .collapse[b-tchhgvgjtm] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+
+    .nav-scrollable[b-tchhgvgjtm] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(20vh - 3.5rem);
+        overflow-y: auto;
+    }
+}

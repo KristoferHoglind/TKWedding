@@ -59,10 +59,10 @@
     },
     "satelliteResources": {
       "pl": {
-        "pl\/TKWeddingASPBlazor.resources.dll": "sha256-XkThsefUPmcCkOc5CkRchr4GYDl6rGrFTUsxmjVWF1U="
+        "pl\/TKWeddingASPBlazor.resources.dll": "sha256-3Z6HQVX0MNdlA3+VqMBmvabx6y5x1FRYWTeCVuF8n\/s="
       },
       "sv": {
-        "sv\/TKWeddingASPBlazor.resources.dll": "sha256-kcYhIucWXrhXQH71y\/nSN8ZVzAVBzAZyGGK6+RqLpwo="
+        "sv\/TKWeddingASPBlazor.resources.dll": "sha256-M3W34bO8zTiVQV6ltONcwY\/ocRP46aWqQyfY3oPn24U="
       }
     }
   }
