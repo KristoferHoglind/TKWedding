@@ -1,15 +1,14 @@
 ﻿@inject IStringLocalizer<Resource> localizer
 
 <div class="row align-items-center culture-selector">
-    <div class="col-3 culture-selector-text">
-        @localizer["selector_lang"]:
-    </div>
-    <div class="col-4">
-        <select class="form-control" @bind="Culture">
-            @foreach (var culture in cultures)
-            {
-                <option value="@culture">@culture.DisplayName</option>
-            }
-        </select>
+    <div class="col-5">
+    @if(CurrentCulture == "pl")
+        {
+            <Button class="flag-button" Type="ButtonType.Button" @onclick="ChangeLanguage"><img class="flag-icon" src="swedishflag.png" /></Button>
+        } 
+        else
+        {
+            <Button class="flag-button" Type="ButtonType.Button" @onclick="ChangeLanguage"><img class="flag-icon" src="polishflag.png" /></Button>
+        }
     </div>
 </div>

@@ -12,25 +12,30 @@ namespace TKWeddingASPBlazor.Shared
         [Inject]
         public IJSRuntime JSRuntime { get; set; }
 
-        CultureInfo[] cultures = new[]
-        {
-        new CultureInfo("sv"),
-        new CultureInfo("pl")
-    };
+        public string CurrentCulture { get; set; }
 
-        CultureInfo Culture
+        public CultureSelector()
         {
-            get => CultureInfo.CurrentCulture;
-            set
+            CurrentCulture = CultureInfo.CurrentUICulture.Name;
+        }
+
+        public void ChangeLanguage()
+        {
+            var currentUICulture = CultureInfo.CurrentUICulture;
+            if(currentUICulture.Name == "sv")
             {
-                if (CultureInfo.CurrentCulture != value)
-                {
-                    var js = (IJSInProcessRuntime)JSRuntime;
-                    js.InvokeVoid("blazorCulture.set", value.Name);
-
-                    NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
-                }
+                var js = (IJSInProcessRuntime)JSRuntime;
+                js.InvokeVoid("blazorCulture.set", "pl");
+                NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
+                CurrentCulture = "pl";
+            } else
+            {
+                var js = (IJSInProcessRuntime)JSRuntime;
+                js.InvokeVoid("blazorCulture.set", "sv");
+                NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
+                CurrentCulture = "sv";
             }
+
         }
     }
 }
